@@ -17,5 +17,9 @@ class TestSubstring(unittest.TestCase):
         score:float = string_utils.calculate_match_degree("software engineering","building engineering")
         self.assertEqual(score, 0.6)
 
+    def test_different_substrings(self):
+        score:float = string_utils.calculate_match_degree("software","computer")
+        self.assertEqual(score, 0)
+
 if __name__ == "__main__":
     unittest.main()
