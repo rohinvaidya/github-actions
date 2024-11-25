@@ -8,6 +8,9 @@ rules:
   addLabels: ['enhancement']
 - contains: enpm611
   assign: ['enpm611']
+- contains: help
+  addLabels: ['help wanted']
+  assign: ['rohinvaidya']
 
 # List that always runs after rules and nomatches. Look for missing sets of tags here.
 tags:
